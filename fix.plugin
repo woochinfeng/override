@@ -1,0 +1,19 @@
+[Rule]
+DOMAIN-SUFFIX,binance.com
+DOMAIN-SUFFIX,binance.info
+DOMAIN-SUFFIX,bnbstatic.com
+DOMAIN-SUFFIX,bscdnweb.com
+DOMAIN-SUFFIX,binance.click
+DOMAIN-SUFFIX,bntrace.com
+DOMAIN-SUFFIX,saasexch.io
+DOMAIN-SUFFIX,bsappapi.cc
+DOMAIN,d3sknckuh1o9tg.cloudfront.net
+IP-CIDR,106.15.179.166/32,no-resolve
+IP-CIDR,120.24.233.110/32,no-resolve
+IP-CIDR,47.106.171.207/32,no-resolve
+
+[Rewrite]
+^https:\/\/cp\.txings\.com\/ header-replace user-agent Shadowrocket/3378\x20CFNetwork/3860.600.12\x20Darwin/25.5.0
+
+[Mitm]
+hostname = *.txings.com
